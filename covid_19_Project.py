@@ -9,8 +9,8 @@ st.set_page_config(page_title="COVID-19 Dashboard", layout="wide")
 st.title("COVID-19 Data Analysis Project (Interactive Dashboard)")
 
 # -------------------------------
-# File Paths
-folder_path = r"D:\covid-19 Project"
+# File Paths (Relative to script location)
+folder_path = os.path.join(os.path.dirname(__file__), "data")  # فولدر data داخل الريبو
 
 files = {
     "covid_clean": "covid_19_clean_complete.csv",
